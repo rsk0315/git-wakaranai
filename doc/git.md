@@ -21,6 +21,4 @@ $ git add foo.c  # foo.c を index に追加
 
 `git add -i` を使うと対話的に操作を行うこともできます．
 
-```
-$ git add -i
-***
+
