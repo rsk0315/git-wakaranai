@@ -139,4 +139,33 @@ working tree に結びつけられたブランチが無く，`HEAD` が detached
 index に差分を追加する方法として，`git add` (`mv`, `rm`) を使うほか，`git commit` の引数にファイル名を与えるものもあります．
 また，`git commit -a` によって全てのファイルを追加できるほか，`--interactive` オプションで対話的に行うこともできます．
 
+ログメッセージは `-m` オプションで与えるとシェル上で行えますが，オプションなしで `commit` するとエディタ上で書くことができます．
+
+```
+$ git commit -m Nya
+```
+
+`COMMIT_EDITMSG`
+```
+  1 
+  2 # Please enter the commit message for your changes. Lines starting 
+  3 # with '#' will be ignored, and an empty message aborts the commit.
+  4 #
+  5 # On branch master
+  6 # Your branch is ahead of 'origin/master' by 4 commits.
+  7 #   (use "git push" to publish your local commits)
+  8 #
+  9 # Changes to be committed:
+ 10 #       modified:   foo.c
+ 11 #  
+```
+
+`--amend` オプションによって，直前のコミットのメッセージを書き直すことができます．
+
+## `git reset`
+
+`HEAD` を指定した状態に変更します．
+
+`--soft`, `--hard`, `--mixed` を指定することで，index や working tree 上のファイルもリセットするかどうかを指定します．
+
 
