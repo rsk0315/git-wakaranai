@@ -21,4 +21,21 @@ $ git add foo.c  # foo.c を index に追加
 
 `git add -i` を使うと対話的に操作を行うこともできます．
 
+```
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +1/-1 sample/bar.c
+  2:        +1/-1      nothing sample/foo.c
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 
+```
+
+この状態では，`bar.c` は `+1/-1`，すなわち 1 行の追加と 1 行の削除があったものの，それは index には追加されていない（unstaged）ことになっています．
+また，`foo.c` は `+1/-1` の変更が index に追加されて（staged）いることがわかります．unstaged が nothing になっていることから，index に追加された状態とファイルシステム上での状態が同じであることもわかります．
+
+ここから `bar.c` も index に追加したいときは，2 を選択します．
+
 
