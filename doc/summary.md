@@ -101,4 +101,56 @@ GPG で署名されたタグオブジェクトの作成，表示，削除およ�
 ## `git grep`
 パターンにマッチする行を表示する
 
+# Email
+## `git am`
+メールボックスからパッチの列を適用する
 
+## `git apply`
+
+## `git format-patch`
+メールで投稿するためのパッチを準備する
+
+## `git send-email`
+パッチを集めたものをメールで送信する
+
+## `git request-pull`
+保留中の変更の要約を生成する
+
+# External Systems
+## `git svn`
+Subversion と Git 間での操作を行う
+
+## `git fast-import`
+fast Git data importer のためのバックエンド
+
+# Server Admin
+## `git daemon`
+Git リポジトリのためのシンプルなサーバ
+
+## `git update-server-info`
+dumb なサーバを助けるための補助情報ファイルを更新する
+
+# Administration
+## `git clean`
+追跡されていないファイルを working tree から削除する
+
+## `git gc`
+不要なファイルを削除し，ローカルリポジトリを最適化する
+
+## `git fsck`
+データベース中のオブジェクトの connectivity と validity を検証する
+
+## `git reflog`
+reflog (reference log) の情報を管理する
+
+## `git filter-branch`
+ブランチを書き換える
+
+## `git instaweb`
+gitweb で作業中のリポジトリを browse する
+
+## `git archive`
+named tree からファイルのアーカイブを作成する
+
+## `git bundle`
+オブジェクトと ref を移動する（アーカイブで？） 
