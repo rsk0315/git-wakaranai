@@ -139,5 +139,4 @@ working tree に結びつけられたブランチが無く，`HEAD` が detached
 index に差分を追加する方法として，`git add` (`mv`, `rm`) を使うほか，`git commit` の引数にファイル名を与えるものもあります．
 また，`git commit -a` によって全てのファイルを追加できるほか，`--interactive` オプションで対話的に行うこともできます．
 
-a
 
