@@ -1,5 +1,6 @@
 #include <cstdio>
 
 int main() {
-  puts("bar");
+  puts("BAR");
+  puts("Bar");
 }
