@@ -38,4 +38,31 @@ What now>
 
 ここから `bar.c` も index に追加したいときは，2 を選択します．
 
+```
+What now> 2
+           staged     unstaged path
+  1:    unchanged        +1/-1 sample/bar.c
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +1/-1 sample/bar.c
+Update>> 
+updated 1 path
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 7
+Bye.
+```
+
+プロンプトが `>` のときは単一選択で，`>>` のときは複数選択が可能です．
+
+## 選択の例
+- `>> 2` 
+  - `2` を追加
+- `>> 2-5,7,9-`
+  - `2` から `5` と `7` と `9` 以降を追加
+- `>> -4`
+  - `4` を削除（`4` 以前を追加ではない）
+
 
